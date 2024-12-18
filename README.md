@@ -54,4 +54,10 @@ WHERE phone IS NULL;
 INSERT INTO `students`(name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number , email, degree_id) 
 VALUE ('Simone', 'Domenici', '2000-04-11', 'DMNSMN00D11H501N', CURDATE(), '690096', 'simone00@gmail.com', '96');
 ```
+### 10. Cambiare il numero dell'ufficio del professor Pietro Rizzo in 126
+```sql
+UPDATE `teachers` 
+SET office_number = 126 
+WHERE name = 'Pietro' AND surname = 'Rizzo';
+```
 
