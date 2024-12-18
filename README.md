@@ -49,3 +49,9 @@ AS `teachers_without_phone`
 FROM `teachers` 
 WHERE phone IS NULL;
 ```
+### 9. Inserire nella tabella degli studenti un nuovo record con i propri dati
+```sql
+INSERT INTO `students`(name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number , email, degree_id) 
+VALUE ('Simone', 'Domenici', '2000-04-11', 'DMNSMN00D11H501N', CURDATE(), '690096', 'simone00@gmail.com', '96');
+```
+
